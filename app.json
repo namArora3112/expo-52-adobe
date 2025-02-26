@@ -34,13 +34,6 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ],
-      [
-        "aepsdk-expo-plugin",
-        {
-          "environmentFileId": "example",
-          "logLevel": "DEBUG"
-        }
       ]
     ],
     "experiments": {
