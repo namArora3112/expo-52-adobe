@@ -4,8 +4,17 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { useEffect } from 'react';
+import { Assurance } from '@adobe/react-native-aepassurance';
 
 export default function HomeScreen() {
+
+
+  useEffect(() => { 
+
+    Assurance.startSession("edgetutorialapp://?adb_validation_sessionid=65d372d7-588f-429a-b6f1-9b518cbe4ba5");
+
+  }, []);
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}

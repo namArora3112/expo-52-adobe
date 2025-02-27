@@ -15,21 +15,12 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@adobe/react-native-aepcore": "/Users/namarora/Documents/Dev/aepsdk-react-native/packages/core",
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "@adobe/react-native-aepassurance": "^6.0.0",
-    "@adobe/react-native-aepcampaignclassic": "^6.0.0",
-    "@adobe/react-native-aepcore": "^6.0.0",
-    "@adobe/react-native-aepedge": "^6.0.0",
-    "@adobe/react-native-aepedgebridge": "^6.0.0",
-    "@adobe/react-native-aepedgeconsent": "^6.0.0",
-    "@adobe/react-native-aepedgeidentity": "^6.0.0",
-    "@adobe/react-native-aepmessaging": "^6.0.0",
-    "@adobe/react-native-aepoptimize": "^6.1.0",
-    "@adobe/react-native-aepplaces": "^6.0.0",
-    "@adobe/react-native-aeptarget": "^6.0.0",
-    "@adobe/react-native-aepuserprofile": "^6.0.0",
+
     "expo": "~52.0.37",
     "expo-blur": "~14.0.3",
     "expo-constants": "~17.0.7",

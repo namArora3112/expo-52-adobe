@@ -38,13 +38,13 @@ target 'myapp' do
 
   use_react_native!(
     :path => config[:reactNativePath],
-    :hermes_enabled => true,
+    :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/..",
     :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] != 'false',
   )
 
-  post_install do |installer| 
+  post_install do |installer|
       # Added by Adobe Expo SDK Plugin
       installer.pods_project.targets.each do |t|
           if t.name.start_with?("AEP")
